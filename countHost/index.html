@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        body {
+            margin-top: 300px;
+            font-size: 20px;
+        }
+        .addr {
+            text-align: center;
+            width: 30px;
+        }
+
+    </style>
+    <script src="ip.js"></script>
+</head>
+<body>
+<div style="text-align: center;">
+<div class="inputs">
+    IP Address:
+    <input type='text' class='addr' id='q1'> .
+    <input type='text' class='addr' id='q2'> .
+    <input type='text' class='addr' id='q3'> .
+    <input type='text' class='addr' id='q4'>
+    Mask:
+    <input type='text' class='addr' id='cidr'>
+    <button onclick='onClick();'>Calculate</button>
+</div>
+
+<div class='result'>
+    <span class=label>IP-Адрес:</span>
+    <span class=value id=resIP></span>
+</div>
+<div class='result'>
+    <span class=label>Маска подсети:</span>
+    <span class=value id=resMask></span>
+</div>
+<div class='result'>
+    <span class=label>IP-Адрес сети:</span>
+    <span class=value id=resNet></span>
+</div>
+<div class='result'>
+    <span class=label>Широковещательный адрес:</span>
+    <span class=value id=resBC></span>
+</div>
+<div class='result'>
+    <span class=label>Диапазон IP:</span>
+    <span class=value id=resRange></span>
+</div>
+<div class='result'>
+    <span class=label>Число хостов:</span>
+    <span class=value id=hosts></span>
+</div>
+</div>
+</body>
+</html>
